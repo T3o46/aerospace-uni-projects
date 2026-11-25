@@ -1,0 +1,241 @@
+ ************************************************************************
+ **                                                                    **
+ **                                                                    **
+ **                     Altair OptiStruct(TM) 2026                     **
+ **                                                                    **
+ **             Advanced Engineering Analysis, Design and              **
+ **        Optimization Software from Altair Engineering, Inc.         **
+ **                                                                    **
+ **   OptiStruct includes an enhanced proprietary version of NASTRAN   **
+ **                                                                    **
+ **                                                                    **
+ **             Windows 10  (Build 9200)  DESKTOP-TFQNNIG              **
+ **                    16 CPU:  AMD Ryzen 7 7435HS                     **
+ **                    5048 MB RAM,  26954 MB swap                     **
+ **                                                                    **
+ ** Build: 1291590uwn33xxx_Ce64RB6s8UH14M-000  1046004004000000004000  **
+ ************************************************************************
+ **  COPYRIGHT (C) 1996-2025                 Altair Engineering, Inc.  **
+ ** All Rights Reserved.  Copyright notice does not imply publication. **
+ **         Contains trade secrets of Altair Engineering, Inc.         **
+ ** Decompilation or disassembly of this software strictly prohibited. **
+ ************************************************************************
+ 
+  
+ *** OptiStruct defaults set from:
+   install config file: C:/PROGRA~1/Altair/2026/hwsolvers/optistruct.cfg.
+  
+  
+ NOTE # 9199
+ MSGLMT=STRICT is active, all messages will be printed unless there is
+ a subsequent MSGLMT definition to limit error or warning messages.
+ You can also suppress some less important warning messages by use of
+  MSGLMT=BRIEF or UNREF (in config file or in the input data).
+  
+ NOTE # 1929
+ Created RAM scratch area: total size 10 MB.
+  
+ ***************************** INFORMATION ******************************
+ * For OptiStruct useful guidelines and tips (Nonlinear analysis
+ * convergence, the model validity check etc...), go to the URL:
+ * https://help.altair.com/hwsolvers/os/topics/solvers/os/debugging.htm
+ ************************************************************************
+  
+  
+
+
+  Dependent degrees-of-freedom (DOF) swapped by activation of AUTOMSET
+  --------------------------------------------------------------------
+       No.         Original DOF                    New DOF
+                 Grid ID    Component          Grid ID    Component
+         1            51            1               26            3
+         2            51            2               27            3
+         3            51            4               27            2
+         4            51            5               27            1
+         5            51            6               19            1
+  --------------------------------------------------------------------
+
+
+ 
+
+************************************************************************
+
+OPTIMIZATION FILE AND PARAMETER INFORMATION :
+---------------------------------------------
+
+  FEM model file               : analysis1.fem
+  Output files prefix          : analysis1
+  Model read from files:
+ (*1)	    analysis1.fem
+
+************************************************************************
+
+ 
+
+************************************************************************
+
+FINITE ELEMENT MODEL DATA INFORMATION :
+---------------------------------------
+
+  Total # of Grids (Structural)        :        47
+  Total # of Elements                  :        63
+  Total # of Rigid Elements            :         1
+  Total # of Rigid Element Constraints :         6
+  Total # of Local Coordinate Systems  :         1
+  Total # of Degrees of Freedom        :       244
+  (Structural)
+  Total # of Non-zero Stiffness Terms  :      4875
+
+ 
+  Element Type Information
+  ------------------------
+
+   CBAR     Elements   :       27
+   CQUAD4   Elements   :       30     
+   CROD     Elements   :        6     
+
+  Load and Boundary Information
+  -----------------------------
+
+   LOAD and TEMP Sets:         6
+   SPC   Sets        :         1
+
+  Material and Property Information
+  ---------------------------------
+
+   PBAR    Cards      :         2
+   PSHELL  Cards      :        10
+   PROD    Cards      :         1
+   MAT1    Cards      :         1
+
+************************************************************************
+
+ 
+
+************************************************************************
+
+OPTIMIZATION PROBLEM PARAMETERS :
+---------------------------------
+
+ NO DESIGN MATERIAL OR DESIGN VARIABLES FOUND  : ANALYSIS ONLY
+
+   ------------------------
+   Static Subcase Summary :
+   ------------------------
+
+   ----------   --------  -------  --------------------- 
+   Subcase ID    SPC ID   LOAD ID  Preloading Subcase ID
+   ----------   --------  -------  --------------------- 
+        1            1          5
+        2            1          6
+        3            1          7
+   ----------   --------  -------  --------------------- 
+
+   Run Type                        :   Analysis Only (No design elements)
+   Run at location                 : C:/Users/Teo/Desktop/ASEP/ASE_Project_Part1/
+   Scratch file directory          : C:/Users/Teo/Desktop/ASEP/ASE_Project_Part1/
+                                     Free space:   235.803 GB
+   Number of CPU processors        :          1
+
+
+************************************************************************
+
+ 
+
+************************************************************************
+
+MEMORY ESTIMATION INFORMATION :
+-------------------------------
+
+ Solver Type is:  Sparse-Matrix Solver
+                  Direct Method
+ 
+ Static Memory (RAM) Allocated in Preprocessor           :     800 MB
+   In addition a ramdisk area was allocated in memory    :      10 MB
+ MUMPS Solver will Run In-Core with Estimated Memory     :       1 MB
+ Estimated Total Memory (RAM)                            :     811 MB
+ 
+ Estimated Memory (RAM) for Out-of-Core Solution         :       3 MB
+ Estimated Memory (RAM) for In-Core Solution             :       4 MB
+ (Note: The Minimum Memory Requirement is limited by Assembly Module.)       
+ 
+DISK SPACE ESTIMATION INFORMATION :
+-----------------------------------
+
+ Estimated Disk Space for Output Data Files              :       7 MB
+ Estimated Scratch Disk Space for In-Core Solution       :       0 MB
+ Estimated Scratch Disk Space for Out-of-Core Solution   :       0 MB
+
+************************************************************************
+
+
+BEGINNING ANALYSIS SOLUTION ....
+
+
+************************************************************************
+
+ANALYSIS RESULTS :
+------------------
+
+  
+ITERATION   0
+  
+ *** INFORMATION # 3454
+ MPC, RBE# (and other rigids) and JOINTG constraints for
+ subcase 1 will be enforced with lagrange multipliers.
+  
+ (Scratch disk space usage for starting iteration = 0 MB)
+(Running in-core solution)
+
+Volume                              =  6.59490E+06   Mass     =  1.78062E-02
+
+-----------------------------------
+Subcase    Compliance       Epsilon
+-----------------------------------
+      1  5.142914E+05  2.263606E-16
+      2  4.253884E+05  2.736683E-16
+      3  2.149793E+06  4.332151E-16
+-----------------------------------
+
+Note: Epsilon = Residual Strain Energy Ratio.
+
+
+************************************************************************
+  
+ ANALYSIS COMPLETED.
+  
+
+************************************************************************
+
+RESOURCE USAGE INFORMATION
+--------------------------
+
+ MAXIMUM MEMORY USED                                       801 MB
+   INCLUDING MEMORY FOR MUMPS                                1 MB
+   IN ADDITION      1 MB MEMORY WAS ALLOCATED FOR TEMPORARY USE
+   IN ADDITION     10 MB RAMDISK AREA WAS ALLOCATED IN MEMORY
+ MAXIMUM DISK SPACE USED                                     1 MB
+   INCLUDING DISK SPACE FOR MUMPS                            0 MB
+
+************************************************************************
+
+
+************************************************************************
+
+COMPUTE TIME INFORMATION
+------------------------
+
+ EXECUTION STARTED                         Fri May 01 13:42:36 2026    
+ EXECUTION COMPLETED                       Fri May 01 13:42:42 2026    
+ ELAPSED TIME                                         00:00:05
+ CPU TIME                                             00:00:03
+
+************************************************************************
+
+  
+                        ***** END OF REPORT *****
+  
+ For OptiStruct Community Forum, go to the URL:
+ http://www.altair.com/optistruct-community
+ For Altair Community Knowledge Base, go to the URL:
+ http://www.altair.com/knowledge
